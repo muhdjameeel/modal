@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+:root{
+    --linear: linear-gradient(60deg, rgb(160, 138, 41), rgb(50, 158, 73), rgb(163, 163, 35));
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+
+.main{
+    bottom: 12%;
+    width: 100vw;
+    height: 100vh;
+    background: var(--linear);
+}
+
+.wrap1{
+    display: flex;
+    align-items: flex-start;
+    margin: auto;
+    height: 12vh;
+    width: 47vw;
+    top: 5rem;
+}
+.btn:first-child{
+    left: -0.7rem;
+} .btn:last-child{right: -0.7rem;}
+.btn{
+    color: rgb(39, 31, 21);
+    top: -0.3rem;
+    font-size: .8rem;
+    font-weight: 700;
+    width: 11rem;
+    height: 3rem;
+    border-radius: 2.2rem;
+    margin: 1rem;
+    border: none;
+    background-color: rgba(245, 238, 238, 0.651);
+    cursor: pointer;
+    bottom: 3rem;
+    z-index: 2;
+} 
+.btn:hover{
+    background-color: rgb(187, 170, 20);
+    border: 3px solid whitesmoke;
+    outline: 1px solid rgb(207, 84, 13);
+    width: 12.5rem;
+    color: rgb(37, 35, 29);
+}
+
+.wrap2{
+    display: none;
+    margin: auto;
+    border-radius: 5px;
+    height: 49vh;
+    width: 75vw;
+    top: -18%;
+    left: 38%;
+    background-color:  rgb(196, 185, 185);
+    transform: translate(-50%, -140%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    opacity: 1;
+    z-index: 3;
+}
+
+
+.wrap2 h2, p{
+    left: 2rem;
+    top: 1.3rem;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    font-weight: 900;
+}
+.wrap2 p{
+    width: 90%;
+    line-height: 1.6rem;
+    font-weight: 550;
+}
+.icon{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border:1px solid orange;
+    border-radius: 50%;
+    left: 90%;
+    bottom: 1.5rem;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.fetch{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 2px;
+    background-color: rgb(41, 32, 32);
+    color: whitesmoke;
+    top: 2.5rem;
+    left: 2rem;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px) {
+    .wrap2{
+        height: 60%;
+        top: 8%;
+    }
+}
